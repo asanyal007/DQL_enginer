@@ -21,10 +21,14 @@ snf_conn = data_util.Snowflake(snf_user, snf_password, snf_account)
 
 conn = data_util.SQLAlchemy(conn_type, user, password, host, db)
 
+conn.create_tables("ddl/sql_ddl_attribute.txt")
+conn.create_tables("ddl/sql_ddl_corr.txt")
+conn.create_tables("ddl/sql_ddl_table_level")
+
 source_data = snf_conn.read_snowflake(snf_databse, 'TPCDS_SF10TCL', 'ITEM')
 
 
-final_corr_data, table_level_profile, attribute_profile = profiler.Profile(source_data).create_profile('ITEM', now, 1)
+final_corr_data, table_level_profile, attribute_profile = profiler.Profile(source_data).create_profile('ITEM', now, 1, 'ITEMS')
 
 dtype = {
                 'character_counts': sqlalchemy.types.JSON,
@@ -43,6 +47,6 @@ dtype = {
 
 
 conn.to_sql(final_corr_data, 'corr', dtype={})
-#conn.to_sql(table_level_profile, 'table_profile', dtype={})
+conn.to_sql(table_level_profile, 'table_level_profile', dtype={})
 conn.to_sql(attribute_profile, 'attribute_profile', dtype=dtype)
 

@@ -20,14 +20,23 @@ class SQLAlchemy:
         else:
             data.to_sql(tablename, con=self.engine, if_exists='replace')
 
-
-
     def read_sql(self, table, chunksize):
         if chunksize:
             data = pd.read_sql_table(table, con=self.engine, chunksize=chunksize)
         else:
             data = pd.read_sql_table(table, con=self.engine)
         return data
+
+    def create_tables(self, ddl):
+        try:
+            f = open(ddl, "r")
+            ddl_txt = f.read()
+        except Exception as e:
+            print(e)
+        try:
+            self.engine.execute(ddl_txt)
+        except Exception as e:
+            print(e)
 
 class Snowflake:
     def __init__(self, user, password, account):

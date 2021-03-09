@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS "table_level_profile"
+                ("n" INTEGER,
+                "source_name" TEXT,
+                "n_var" INTEGER,
+                "memory_size" INTEGER,
+                "record_size" REAL,
+                "n_cells_missing" INTEGER,
+                "n_vars_with_missing" INTEGER,
+                "n_vars_all_missing" INTEGER,
+                "p_cells_missing" REAL,
+                "n_duplicates" INTEGER,
+                "p_duplicates" REAL,
+                "types" TEXT)

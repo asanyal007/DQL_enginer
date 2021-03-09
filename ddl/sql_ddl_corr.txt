@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS "corr"
+            ("timestamp" timestamp,
+            "batch_id" INT,
+            "source_name" TEXT,
+            "X" TEXT,
+            "Algo" TEXT,
+            "y" TEXT,
+            "Value" REAL)
