@@ -1,0 +1,216 @@
+2021-03-08 09:09:05,256 - mylogger - INFO - dq main program started................
+2021-03-08 09:09:05,343 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 09:09:05,343 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 09:09:05,343 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 09:09:05,344 - mylogger - ERROR - <class 'FileNotFoundError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQL_int\\DQL_demo\\resources\\utilities', 'HeaderReader.py'):22:[Errno 2] No such file or directory: 'resources/demodatacomma.csv'
+2021-03-08 09:11:19,609 - mylogger - INFO - dq main program started................
+2021-03-08 09:11:19,614 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 09:11:19,614 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 09:11:19,614 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 09:11:19,614 - mylogger - ERROR - <class 'FileNotFoundError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQL\\resources\\utilities', 'HeaderReader.py'):22:[Errno 2] No such file or directory: 'resources/demodatacomma.csv'
+2021-03-08 15:03:06,301 - mylogger - INFO - dq main program started................
+2021-03-08 15:03:06,306 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:03:06,306 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:03:06,306 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:03:06,315 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:03:06,315 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:03:06,315 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:03:06,315 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:03:06,315 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:03:06,315 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:03:06,316 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:03:06,316 - mylogger - DEBUG - DATE
+2021-03-08 15:03:06,317 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:03:06,318 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:03:06,318 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:03:06,318 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'failed', 8]
+2021-03-08 15:03:06,318 - mylogger - DEBUG - DATE
+2021-03-08 15:03:06,318 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 15:03:06,320 - mylogger - INFO - {'totalRecords': 2, 'errorRecordCount': 2}
+2021-03-08 15:03:06,321 - mylogger - INFO - dq main program ended................
+2021-03-08 15:04:36,977 - mylogger - INFO - dq main program started................
+2021-03-08 15:04:36,983 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:04:36,983 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:04:36,983 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:04:36,985 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:04:36,985 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:04:36,985 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:04:36,986 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:04:36,986 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:04:36,986 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:04:36,986 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:04:36,986 - mylogger - DEBUG - DATE
+2021-03-08 15:04:36,988 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:04:36,988 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:04:36,988 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:04:36,988 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'failed', 8]
+2021-03-08 15:04:36,988 - mylogger - DEBUG - DATE
+2021-03-08 15:04:36,988 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 15:04:36,990 - mylogger - INFO - {'totalRecords': 2, 'errorRecordCount': 2}
+2021-03-08 15:04:36,990 - mylogger - INFO - dq main program ended................
+2021-03-08 15:10:08,105 - mylogger - INFO - dq main program started................
+2021-03-08 15:10:08,110 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:10:08,110 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:10:08,110 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:10:08,112 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:10:08,112 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:10:08,113 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:10:08,113 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:10:08,115 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:10:08,115 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:10:08,115 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:10:08,115 - mylogger - DEBUG - DATE
+2021-03-08 15:10:08,117 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 15:10:08,117 - mylogger - ERROR - <class 'AttributeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:'str' object has no attribute 'append'
+2021-03-08 15:10:08,117 - mylogger - ERROR - <class 'AttributeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:'str' object has no attribute 'append'
+2021-03-08 15:10:27,386 - mylogger - INFO - dq main program started................
+2021-03-08 15:10:27,391 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:10:27,392 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:10:27,392 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:10:27,394 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:10:27,394 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:10:27,395 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:10:27,395 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:10:27,397 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:10:27,397 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:10:27,398 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:10:27,398 - mylogger - DEBUG - DATE
+2021-03-08 15:10:27,399 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 15:10:27,400 - mylogger - ERROR - <class 'AttributeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:'str' object has no attribute 'append'
+2021-03-08 15:10:27,400 - mylogger - ERROR - <class 'AttributeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:'str' object has no attribute 'append'
+2021-03-08 15:12:07,407 - mylogger - INFO - dq main program started................
+2021-03-08 15:12:07,412 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:12:07,412 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:12:07,412 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:12:07,414 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:12:07,414 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:12:07,415 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:12:07,415 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:12:07,417 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:12:07,417 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:12:07,418 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:12:07,418 - mylogger - DEBUG - DATE
+2021-03-08 15:12:07,419 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:12:07,420 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+2021-03-08 15:12:07,420 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+2021-03-08 15:13:15,528 - mylogger - INFO - dq main program started................
+2021-03-08 15:13:15,540 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:13:15,540 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:13:15,541 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:13:15,545 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:13:15,545 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:13:15,545 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:13:15,545 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:14:30,981 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:14:30,982 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:14:30,983 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:14:30,984 - mylogger - DEBUG - DATE
+2021-03-08 15:14:30,989 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:15:08,571 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+2021-03-08 15:15:08,572 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+2021-03-08 15:15:51,334 - mylogger - INFO - dq main program started................
+2021-03-08 15:15:51,347 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:15:51,347 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:15:51,347 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:15:51,352 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:15:51,352 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:15:51,352 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:15:51,352 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:16:48,657 - mylogger - INFO - dq main program started................
+2021-03-08 15:16:48,669 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:16:48,669 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:16:48,669 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:16:48,673 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:16:48,674 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:16:48,674 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:16:48,674 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:16:48,679 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:16:48,679 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:16:48,680 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:16:48,680 - mylogger - DEBUG - DATE
+2021-03-08 15:16:48,684 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:16:48,685 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+2021-03-08 15:16:48,685 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):56:cannot concatenate object of type '<class 'str'>'; only Series and DataFrame objs are valid
+2021-03-08 15:17:17,091 - mylogger - INFO - dq main program started................
+2021-03-08 15:17:17,104 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:17:17,104 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:17:17,105 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:17:17,109 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:17:17,110 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:17:17,110 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:17:17,110 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:17:17,115 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:17:17,116 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:17:17,116 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:17:17,116 - mylogger - DEBUG - DATE
+2021-03-08 15:17:17,120 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:18:49,355 - mylogger - INFO - dq main program started................
+2021-03-08 15:18:49,368 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:18:49,368 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:18:49,368 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:18:49,373 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:18:49,373 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:18:49,373 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:18:49,373 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:18:58,366 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:18:58,366 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:18:58,367 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:18:58,367 - mylogger - DEBUG - DATE
+2021-03-08 15:18:58,371 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:19:11,238 - mylogger - INFO - dq main program started................
+2021-03-08 15:19:11,243 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:19:11,243 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:19:11,243 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:19:11,245 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:19:11,245 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:19:11,245 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:19:11,245 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:19:11,247 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:19:11,248 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:19:11,248 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:19:11,248 - mylogger - DEBUG - DATE
+2021-03-08 15:19:11,250 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:19:11,250 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:19:11,250 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:19:11,250 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'failed', 8]
+2021-03-08 15:19:11,250 - mylogger - DEBUG - DATE
+2021-03-08 15:19:11,250 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 15:19:11,251 - mylogger - ERROR - <class 'TypeError'>:('C:\\Users\\Aritra The Boxer\\PycharmProjects\\DQ_Engine\\resources\\DQ', 'FileDQ.py'):70:must be str, not float
+2021-03-08 15:20:23,684 - mylogger - INFO - dq main program started................
+2021-03-08 15:20:23,697 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 15:20:23,697 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 15:20:23,697 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 15:20:23,701 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 15:20:23,702 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 15:20:23,702 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 15:20:23,702 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 15:20:23,706 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:20:23,707 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:20:23,707 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 15:20:23,708 - mylogger - DEBUG - DATE
+2021-03-08 15:20:23,711 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 15:20:23,711 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 15:20:23,711 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 15:20:23,712 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'failed', 8]
+2021-03-08 15:20:23,712 - mylogger - DEBUG - DATE
+2021-03-08 15:20:23,712 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 19:02:13,578 - mylogger - INFO - dq main program started................
+2021-03-08 19:02:13,583 - mylogger - INFO - rule: BR5-->CURRENCY not supported
+2021-03-08 19:02:13,583 - mylogger - DEBUG - {'file1': {'BR1': ['CUSTOMERID', 'NOTNULL', 'Invalid Customer ID Check', '', 'passed']}, 'table1': {'BR2': ['ZIPCODE', 'ZIPCODE', 'Zip Code Validation', '', 'passed']}, 'file2': {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed'], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed']}}
+2021-03-08 19:02:13,583 - mylogger - INFO - dq main program config rules parsed successfully................
+2021-03-08 19:02:13,585 - mylogger - INFO - ['CUSTOMERID', 'CUSTOMERNAME', 'ADDRESSLINE1', 'ADDRESSLINE2', 'CITY', 'STATE', 'ZIPCODE', 'PHONENUMBER', 'DATE']
+2021-03-08 19:02:13,585 - mylogger - INFO - main program header parsed successfully from file................
+2021-03-08 19:02:13,585 - mylogger - DEBUG - {'BR3': ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7], 'BR4': ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]}
+2021-03-08 19:02:13,585 - mylogger - INFO - dq main program rules and headers mapped successfully................
+2021-03-08 19:02:13,589 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 19:02:13,589 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 19:02:13,589 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'passed', 8]
+2021-03-08 19:02:13,590 - mylogger - DEBUG - DATE
+2021-03-08 19:02:13,591 - mylogger - DEBUG - rules result  ---> ['Invalid DATE', {'BR4': 'failed'}]
+2021-03-08 19:02:13,591 - mylogger - DEBUG - rule: ['PHONENUMBER', 'PHONENUMBER', 'Phonenumber validation', '##########,###-###-####', 'passed', 7]
+2021-03-08 19:02:13,591 - mylogger - DEBUG - PHONENUMBER
+2021-03-08 19:02:13,591 - mylogger - DEBUG - rule: ['DATE', 'DATE', 'date validation', 'ddmmyyyy', 'failed', 8]
+2021-03-08 19:02:13,592 - mylogger - DEBUG - DATE
+2021-03-08 19:02:13,592 - mylogger - DEBUG - rules result  ---> ['Invalid PHONENUMBER|Invalid DATE', {'BR3': 'failed', 'BR4': 'failed'}]
+2021-03-08 19:02:13,593 - mylogger - INFO - {'totalRecords': 2, 'errorRecordCount': 2}
+2021-03-08 19:02:13,593 - mylogger - INFO - dq main program ended................

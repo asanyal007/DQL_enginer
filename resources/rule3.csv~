@@ -1,0 +1,4 @@
+Rule #,Rule Description,Value Field,Value Check,Category,Version
+BR1,Invalid Customer ID Check,CustomerID,"Not Null,AlphaNumeric",Customer,1.0
+BR2,Zip Code Validation,ZipCode,"Length of zipcode = (5,10)",Customer,1.0
+BR3,Phonenumber validation,Phonenumber,Phone number Length = 10,Customer,1.0

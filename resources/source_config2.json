@@ -1,0 +1,26 @@
+{
+  "datasource": [{
+    "type": "mysql",
+    "connection": {
+      "user":"abc",
+      "password": "abc",
+      "host": "abc",
+      "database": "abc"
+    }
+  },
+  {
+    "type": "file",
+    "connection": {
+      "path":"abc",
+      "filename": "abc"
+    }
+  },
+  {
+    "type": "api",
+    "connection": {
+      "host":"abc",
+      "username": "abc",
+      "password": "abc"
+    }
+  }]
+}

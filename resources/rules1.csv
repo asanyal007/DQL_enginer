@@ -1,0 +1,4 @@
+RuleNumber,ColumnReference,RuleValue,Rules Description,version,Category
+R1,CustomerID,"NotNULL, Alphanumeric",CustomerID Validation,,Customer
+R2,Name,NotNull,Active policy zipcode can not null,,Customer
+R3,PhoneNumber,phone numer should be 10 digits,Phone number validation,,Customer

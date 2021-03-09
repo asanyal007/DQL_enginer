@@ -1,0 +1,6 @@
+Rule,Rule_Description,Value_Field,Value_Check,Category,Version,Pattern,source_type,source_location,source_name,delimiter
+BR1,Invalid Customer ID Check,CustomerID,NotNull,Customer2,1,,file,path,file1,|
+BR2,Zip Code Validation,Zipcode,zipCode,Customer2,1,,table,db,table1,
+BR3,Phonenumber validation,Phonenumber,phoneNumber,Customer1,1,"##########,###-###-####",file,path,file2,
+BR4,date validation,date,date,Customer1,1,ddmmyyyy,file,path,file2,
+BR5,currency validation,CustomerID,currency,Customer1,1,,file,path,file2,

@@ -1,0 +1,3 @@
+CustomerID,CustomerName,Addressline1,Addressline2,City,State,Zipcode,Phonenumber,date
+"C001001","Mark","28, Tracy Pl","","Hackensack","NJ","076011","212-212-4413","02/03/2021 00:00:00"
+"C001002","Anderson","12 Passic st","","Union","NJ","07212-0000","11213412134","02/15/2021"
