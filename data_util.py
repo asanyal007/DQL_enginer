@@ -53,3 +53,4 @@ class Snowflake:
         data = cs.fetch_pandas_all()
         data = data.where(pd.notnull(data), None)
         return data
+

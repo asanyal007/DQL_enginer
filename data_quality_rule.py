@@ -4,7 +4,7 @@ from resources.utilities.RuleHeaderMapping import RuleHeaderMapping
 from resources.utilities.RulesExcelReader1 import RulesExcelReader
 from resources.DQ.FileDQ import FileDQ
 from resources.logger.MyLogger import logger
-
+import data_util
 
 # DQ rules file
 rulesexcel = "resources/rule3.csv"
@@ -15,7 +15,7 @@ commafilepath: str = "resources/demodatacomma.csv"
 #file delimiter
 separator = ','
 
-def dqmain():
+def dqmain(sourceinfo):
     logger.info("dq main program started................")
 
     """
@@ -31,13 +31,15 @@ def dqmain():
     """
     # DQ rules config reading
     rules = RulesExcelReader(rulesexcel).getrules()
-    rules = rules['file2']
+    rules = rules['items']
 
     logger.info("dq main program config rules parsed successfully................")
 
     # all the header columns in the input file:
     # header = ['CustomerID', 'CustomerName', 'Addressline1', 'Addressline2', 'City', 'State', 'Zipcode', 'Phonenumber']
-    header = HeaderReader(commafilepath, separator).getheader()
+    snf_conn = data_util.Snowflake(sourceinfo['username'], sourceinfo['password'], sourceinfo['host'])
+    data = snf_conn.read_header(sourceinfo['database'], sourceinfo['schema'], sourceinfo['table'])
+    header = HeaderReader(data).getheader()
 
     logger.info("main program header parsed successfully from file................")
 
@@ -53,9 +55,11 @@ def dqmain():
     logger.info("dq main program rules and headers mapped successfully................")
 
     # start DQ check
-    FileDQ(commafilepath, rulecolumnindex, separator).applyDQ()
+    FileDQ(data, rulecolumnindex, separator).applyDQ()
 
     logger.info("dq main program ended................")
 
 if __name__ == "__main__":
-    dqmain()
+    sourceinfo = {'sourcetype': 'snowflake', 'host': 'dt21316.us-central1.gcp', 'username': 'WNS123', 'password': 'Nq1dRuaV',  'database': 'SNOWFLAKE_SAMPLE_DATA', 'schema': 'TPCDS_SF10TCL', 'table': 'ITEM'}
+    #sourceinfo = {'sourcetype': 'filesystem', 'filename': commafilepath, 'separator': separator}
+    dqmain(sourceinfo)

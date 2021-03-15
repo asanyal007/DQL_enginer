@@ -50,7 +50,7 @@ def validatedatepattern(columnname, patterns, value):
         pattern = pattern.upper()
         pattern = pattern.replace('MMM', '%b').replace('MM', '%m').replace('DD', '%d').replace('YYYY', '%Y').replace('yy', '%y')
         try:
-            datetime.datetime.strptime(value, pattern)
+            datetime.datetime.strptime(str(value), pattern)
         except:
             flag = True
     if flag:

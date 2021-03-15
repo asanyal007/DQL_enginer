@@ -16,8 +16,8 @@ validationFile = "resources/status.csv"
 class FileDQ:
 
     #FileDQ init function
-    def __init__(self, filepath, rulelist, separator):
-        self.filePath = filepath
+    def __init__(self, dataframe, rulelist, separator):
+        self.dataframe = dataframe
         self.rules = rulelist
         self.separator = separator
 
@@ -32,8 +32,8 @@ class FileDQ:
 
         try:
             #inputfile = open(self.filePath, "r")
-            df_chunk = pd.read_csv(self.filePath)
-            df_chunk = df_chunk.replace(np.nan, '', regex=True)
+            #df_chunk = pd.read_csv(self.filePath)
+            df_chunk = self.dataframe.replace(np.nan, '', regex=True)
             #csvreader = csv.reader(inputfile, delimiter=self.separator)
             if header:
                 headerline = []
@@ -47,7 +47,7 @@ class FileDQ:
             # looping all the records one by one from input file
             for line in df_chunk.values:
                 # applying the rules
-                print(line)
+                #print(line)
                 recordcount = recordcount + 1
                 result = rule.applyrules(line)
                 logger.debug("rules result  ---> "+str(result))

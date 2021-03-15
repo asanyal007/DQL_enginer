@@ -7,7 +7,7 @@ now = datetime.now()
 
 conn_type = 'postgresql'
 user = 'postgres'
-password = 'Nq1dRuaV'
+password = 'password'
 host = 'localhost'
 db = 'postgres'
 
@@ -26,6 +26,8 @@ conn.create_tables("ddl/sql_ddl_corr.txt")
 conn.create_tables("ddl/sql_ddl_table_level")
 
 source_data = snf_conn.read_snowflake(snf_databse, 'TPCDS_SF10TCL', 'ITEM')
+
+source_data.to_csv('sample.csv')
 
 
 final_corr_data, table_level_profile, attribute_profile = profiler.Profile(source_data).create_profile('ITEM', now, 1, 'ITEMS')
