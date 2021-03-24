@@ -17,6 +17,19 @@ class Profile:
         d = json.loads(json_acceptable_string)
         with open('data.txt', 'w') as outfile:
             json.dump(d, outfile)
+            
+        # get warnings
+        dic = {}
+        df_warn = pd.DataFrame()
+        for i in d['messages']:
+            if i.split('column')[1] not in dic.keys():
+                dic[i.split('column')[1]] = []
+            dic[i.split('column')[1]].append(i)
+        df_warn['col'] = dic.keys()
+        df_warn['warnings'] = dic.values()
+        df_warn['batch_id'] = batch_id
+        df_warn['source_name'] = file_name
+        
         # process correlation data
         dfs = []
         for algo in d['correlations'].keys():
@@ -76,6 +89,6 @@ class Profile:
                 new_val.append(v)
         attribute_profile['chi_squared'] = new_val
 
-        return final_corr_data, table_level_profile, attribute_profile
+        return final_corr_data, table_level_profile, attribute_profile,df_warn
 
 
