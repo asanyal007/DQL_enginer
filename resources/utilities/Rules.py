@@ -18,6 +18,7 @@ errorlog = ''
 
 # log function, logging messages
 def log(message):
+    #skip = ''
     logger.debug(message)
 
 
@@ -48,7 +49,7 @@ def validatedatepattern(columnname, patterns, value):
     flag = False
     for pattern in patterns:
         pattern = pattern.upper()
-        pattern = pattern.replace('MMM', '%b').replace('MM', '%m').replace('DD', '%d').replace('YYYY', '%Y').replace('yy', '%y')
+        pattern = pattern.replace('MMM', '%b').replace('MM', '%m').replace('DD', '%d').replace('YYYY', '%Y').replace('YY', '%y')
         try:
             datetime.datetime.strptime(str(value), pattern)
         except:
@@ -184,7 +185,7 @@ class Rules:
 
     #process rules
     def processrule(self, columnname, rule, value, pattern):
-        log(rule)
+        #log(rule)
         try:
             rule = constants.supportedrules[rule]
         except:
@@ -224,7 +225,7 @@ class Rules:
             rulename = rule[1]
             pattern = rule[3]
             value = listofvalues[rule[5]]
-            log("rule: "+str(rule))
+            #log("rule: "+str(rule))
             try:
                 ruleresult = self.processrule(columnname, rulename.strip(), value, pattern)
             except:

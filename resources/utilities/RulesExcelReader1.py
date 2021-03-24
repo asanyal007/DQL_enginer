@@ -14,10 +14,35 @@ def is_nan(x):
 class RulesExcelReader:
 
     # RulesExcelReader class init
-    def __init__(self, filepath):
+    def __init__(self, filepath, batch_id, postgre_alchemy):
         self.filepath = filepath
+        self.batch_id = batch_id
+        self.postgre_alchemy = postgre_alchemy
 
     # RulesExcelReader class getrules, parse the csv file and returning the dictionary of rules
+    def get_rules(self):
+        rules = self.postgre_alchemy.fetch_rules(self.batch_id)
+        rules_result = {}
+        rl_df = pd.DataFrame(rules)
+        for index, val in rl_df.iterrows():
+            ruleid = val[0]
+            ruledesc = val[1]
+            rule = val[3].upper()
+            columnname = val[2].upper()
+            rulepattern = val[5]
+            try:
+                rule = constants.supportedrules[rule]
+                if is_nan(rulepattern):
+                    pattern = ''
+                else:
+                    pattern = rulepattern.strip()
+                rule1 = [columnname, rule, ruledesc, pattern, 'passed']
+                rules_result[ruleid] = rule1
+            except:
+                logger.info('rule: ' + ruleid + '-->' + rule + ' not supported')
+        logger.debug(rules_result)
+        return rules_result
+
     def getrules(self):
         try:
             map_data = pd.read_csv(self.filepath)
