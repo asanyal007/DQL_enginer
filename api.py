@@ -62,6 +62,33 @@ def profile_dq():
       except:
          ExceptionLog().log()
          raise InvalidUsage('oops something went wrong at server side', status_code=410)
+         
+@app.route('/get_overview',methods = ['POST'])
+def overvewsummary():
+   import pandas as pd
+   json = request.get_json()
+   job_id = json['job_id']
+   table_name = json['table_name']
+   sql = "select * from table_level_profile where batch_d='{}' and source_name = '{}'".format(job_id, table_name)
+   print(sql)
+   data_from_table = pd.read_sql_query(sql,conn.engine)
+   print(data_from_table)
+   uniqness = 100 - data_from_table['p_duplicates']
+   completeness = 100 - data_from_table['p_cells_missing']
+
+   print(completeness[0])
+   return jsonify(completeness[0],uniqness[0])
+
+@app.route('/get_overvewDetailed',methods = ['POST'])
+def overvewsummaryDetailed():
+   import pandas as pd
+   json = request.get_json()
+   job_id = json['job_id']
+   table_name = json['table_name']
+   sql = "select * from table_level_profile where batch_d='{}' and source_name = '{}'".format(job_id, table_name)
+   print(sql)
+   data_from_table = pd.read_sql_query(sql,conn.engine)
+   return jsonify(data_from_table.to_json())
 
 
 @app.errorhandler(InvalidUsage)
